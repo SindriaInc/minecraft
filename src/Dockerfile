@@ -21,4 +21,4 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone &
     chown -R ${SINDRIA_USER}:${SINDRIA_USER} /var/www/app
 
 #java -Xmx1024M -Xms1024M -jar minecraft_server.1.17.1.jar nogui
-CMD ["java", "-Xmx1024M", "-jar", "minecraft_server.1.17.1.jar", "nogui"]
+CMD ["java", "-Xmx1024M", "-jar", "server.jar", "nogui"]
