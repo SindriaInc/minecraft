@@ -1,3 +1,3 @@
-# OpenJDK
+# Minecraft
 
-custom openjdk base image with UID 1000.
+Minecraft base image with java 16 and latest server version.
