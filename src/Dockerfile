@@ -16,6 +16,6 @@ ENV SINDRIA_USER_HOME="/home/sindria"
 
 # Install application, setting timezone and reset permession
 COPY resources/minecraft/server.jar /var/www/app
-RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone && \
     chmod -R 771 /var/www/app && \
     chown -R ${SINDRIA_USER}:${SINDRIA_USER} /var/www/app
